@@ -39,7 +39,8 @@ class Foreman::Export::SystemdSyslog < Foreman::Export::Base
   end
 
   def write_template(name, target, binding)
-    compiled = ERB.new(export_template("systemd-syslog", name, "systemd-syslog"), nil, '-').result(binding)
+    template_root = Pathname.new(File.dirname(__FILE__)).join("../../../data/export/systemd-syslog")
+    compiled = ERB.new(export_template("systemd-syslog", name, template_root), nil, '-').result(binding)
     write_file target, compiled
   end
 end

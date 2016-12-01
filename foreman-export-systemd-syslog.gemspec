@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name    = 'foreman-export-systemd-syslog'
-  gem.version = '0.0.4'
+  gem.version = '0.0.5'
   gem.date    = Date.today.to_s
 
   gem.add_dependency 'foreman', '>= 0.76.0'
