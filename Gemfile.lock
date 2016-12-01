@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    foreman-export-systemd-syslog (0.0.3)
+    foreman-export-systemd-syslog (0.0.4)
       foreman (>= 0.76.0)
 
 GEM
