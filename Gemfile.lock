@@ -1,0 +1,21 @@
+PATH
+  remote: .
+  specs:
+    foreman-export-systemd-syslog (0.0.1)
+      foreman (>= 0.76.0)
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    foreman (0.78.0)
+      thor (~> 0.19.1)
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  foreman-export-systemd-syslog!
+
+BUNDLED WITH
+   1.11.2
